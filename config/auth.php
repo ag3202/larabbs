@@ -42,7 +42,7 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver' => 'jwt',
             'provider' => 'users',
         ],
     ],
@@ -97,6 +97,9 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+    ],
+    'auth' => [
+        'jwt' => 'Dingo\Api\Auth\Provider\JWT',
     ],
 
 ];
