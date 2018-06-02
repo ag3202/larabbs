@@ -10,6 +10,7 @@ class VerificationCodesController extends Controller
 {
     public function store(VerificationCodeRequest $request, EasySms $easySms)
     {
+
         $captData = \Cache::get($request->captcha_key);
 
         if (!$captData) {
