@@ -98,8 +98,5 @@ return [
             'expire' => 60,
         ],
     ],
-    'auth' => [
-        'jwt' => 'Dingo\Api\Auth\Provider\JWT',
-    ],
 
 ];
